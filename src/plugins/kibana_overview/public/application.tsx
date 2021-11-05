@@ -32,7 +32,7 @@ export const renderApp = (
   const features = home.featureCatalogue.get();
 
   core.chrome.setBreadcrumbs([
-    { text: i18n.translate('kibanaOverview.breadcrumbs.title', { defaultMessage: 'Analytics' }) },
+    { text: i18n.translate('kibanaOverview.breadcrumbs.title', { defaultMessage: 'Análise' }) },
   ]);
 
   ReactDOM.render(

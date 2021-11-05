@@ -24,14 +24,16 @@ export const PersonalInfo = (props: PersonalInfoProps) => {
         <h2>
           <FormattedMessage
             id="xpack.security.account.usernameGroupTitle"
-            defaultMessage="Username and email"
+            // defaultMessage="Username and email"
+            defaultMessage="Usuário e Senha"
           />
         </h2>
       }
       description={
         <FormattedMessage
           id="xpack.security.account.usernameGroupDescription"
-          defaultMessage="You can't change this information."
+          // defaultMessage="You can't change this information."
+          defaultMessage="Você não pode alterar essa informação."
         />
       }
     >
@@ -45,7 +47,8 @@ export const PersonalInfo = (props: PersonalInfoProps) => {
               {props.user.email || (
                 <FormattedMessage
                   id="xpack.security.account.noEmailMessage"
-                  defaultMessage="no email address"
+                  // defaultMessage="no email address"
+                  defaultMessage="Sem endereço de e-mail"
                 />
               )}
             </dd>

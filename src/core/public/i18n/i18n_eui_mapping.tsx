@@ -1062,7 +1062,8 @@ export const getEuiContextMapping = (): EuiTokensObject => {
     'euiSuperUpdateButton.refreshButtonLabel': i18n.translate(
       'core.euiSuperUpdateButton.refreshButtonLabel',
       {
-        defaultMessage: 'Refresh',
+        // defaultMessage: 'Refresh',
+        defaultMessage: 'Atualizar',
         description: 'Displayed in a button that refreshes based on date picked',
       }
     ),

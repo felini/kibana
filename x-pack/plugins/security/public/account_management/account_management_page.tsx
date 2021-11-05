@@ -44,7 +44,8 @@ export const AccountManagementPage = ({ userAPIClient, authc, notifications }: P
             <h1>
               <FormattedMessage
                 id="xpack.security.account.pageTitle"
-                defaultMessage="Settings for {strongUsername}"
+                // defaultMessage="Settings for {strongUsername}"
+                defaultMessage="Informações de {strongUsername}"
                 values={{ strongUsername: <strong>{getUserDisplayName(currentUser)}</strong> }}
               />
             </h1>

@@ -45,6 +45,7 @@ export const NewsfeedNavButton = ({ newsfeedApi }: Props) => {
     setFlyoutVisible(!flyoutVisible);
   }, [newsfeedApi, newsFetchResult, flyoutVisible]);
 
+  return <></>;
   return (
     <NewsfeedContext.Provider value={{ setFlyoutVisible, newsFetchResult }}>
       <>

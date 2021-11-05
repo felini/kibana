@@ -133,7 +133,8 @@ export const Overview: FC<Props> = ({ newsFetchResult, solutions, features }) =>
     <KibanaPageTemplate
       pageHeader={{
         iconType: 'logoKibana',
-        pageTitle: <FormattedMessage defaultMessage="Analytics" id="kibanaOverview.header.title" />,
+        // pageTitle: <FormattedMessage defaultMessage="Analytics" id="kibanaOverview.header.title" />,
+        pageTitle: <FormattedMessage defaultMessage="Análise" id="kibanaOverview.header.title" />,
         rightSideItems: overviewPageActions({
           addBasePath,
           application,
@@ -149,7 +150,8 @@ export const Overview: FC<Props> = ({ newsFetchResult, solutions, features }) =>
             <h2 id="kbnOverviewApps__title">
               <FormattedMessage
                 id="kibanaOverview.apps.title"
-                defaultMessage="Explore these apps"
+                // defaultMessage="Explore these apps"
+                defaultMessage="Explore"
               />
             </h2>
           </EuiScreenReaderOnly>
@@ -177,9 +179,9 @@ export const Overview: FC<Props> = ({ newsFetchResult, solutions, features }) =>
           ) : null}
         </section>
 
-        <EuiHorizontalRule aria-hidden="true" margin="xl" />
+        {/* <EuiHorizontalRule aria-hidden="true" margin="xl" /> */}
 
-        <EuiFlexGroup
+        {/* <EuiFlexGroup
           alignItems="flexStart"
           className={`kbnOverviewSupplements ${
             newsFetchResult && newsFetchResult.feedItems.length
@@ -253,7 +255,7 @@ export const Overview: FC<Props> = ({ newsFetchResult, solutions, features }) =>
               </EuiFlexGroup>
             )}
           </EuiFlexItem>
-        </EuiFlexGroup>
+        </EuiFlexGroup> */}
       </>
 
       <EuiHorizontalRule margin="xl" aria-hidden="true" />

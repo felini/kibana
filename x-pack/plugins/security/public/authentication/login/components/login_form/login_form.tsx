@@ -217,7 +217,7 @@ export class LoginForm extends Component<Props, State> {
             label={
               <FormattedMessage
                 id="xpack.security.login.basicLoginForm.usernameFormRowLabel"
-                defaultMessage="Username"
+                defaultMessage="Usuário"
               />
             }
             {...this.validator.validateUsername(this.state.username)}
@@ -240,7 +240,7 @@ export class LoginForm extends Component<Props, State> {
             label={
               <FormattedMessage
                 id="xpack.security.login.basicLoginForm.passwordFormRowLabel"
-                defaultMessage="Password"
+                defaultMessage="Senha"
               />
             }
             {...this.validator.validatePassword(this.state.password)}
@@ -274,7 +274,7 @@ export class LoginForm extends Component<Props, State> {
               >
                 <FormattedMessage
                   id="xpack.security.login.basicLoginForm.logInButtonLabel"
-                  defaultMessage="Log in"
+                  defaultMessage="Acessar"
                 />
               </EuiButton>
             </EuiFlexItem>
@@ -360,7 +360,8 @@ export class LoginForm extends Component<Props, State> {
             >
               <FormattedMessage
                 id="xpack.security.loginPage.goBackToLoginLink"
-                defaultMessage="Take me back to Login"
+                // defaultMessage="Take me back to Login"
+                defaultMessage="Leve-me de volta à tela de autenticação"
               />
             </EuiLink>
           </EuiText>
@@ -406,7 +407,8 @@ export class LoginForm extends Component<Props, State> {
           <EuiText size="m" className="eui-textCenter">
             <FormattedMessage
               id="xpack.security.loginPage.autoLoginAuthenticatingLabel"
-              defaultMessage="Authenticating…"
+              // defaultMessage="Authenticating…"
+              defaultMessage="Autenticando..."
             />
           </EuiText>
         </EuiFlexItem>
@@ -479,10 +481,12 @@ export class LoginForm extends Component<Props, State> {
         (error as IHttpFetchError).response?.status === 401
           ? i18n.translate(
               'xpack.security.login.basicLoginForm.usernameOrPasswordIsIncorrectErrorMessage',
-              { defaultMessage: 'Username or password is incorrect. Please try again.' }
+              // { defaultMessage: 'Username or password is incorrect. Please try again.' }
+              { defaultMessage: 'Usuário ou senha incorretos. Tente novamente.' }
             )
           : i18n.translate('xpack.security.login.basicLoginForm.unknownErrorMessage', {
-              defaultMessage: `We couldn't log you in. Please try again.`,
+              // defaultMessage: `We couldn't log you in. Please try again.`,
+              defaultMessage: `Não conseguimos realizar a autenticação. Por favor, tente novamente.`,
             });
 
       this.setState({

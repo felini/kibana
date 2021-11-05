@@ -31,7 +31,8 @@ export class ChangePassword extends Component<ChangePasswordPropsInternal, {}> {
     const canChangePassword = canUserChangePassword(this.props.user);
 
     const changePasswordTitle = (
-      <FormattedMessage id="xpack.security.account.changePasswordTitle" defaultMessage="Password" />
+      // <FormattedMessage id="xpack.security.account.changePasswordTitle" defaultMessage="Password" />
+      <FormattedMessage id="xpack.security.account.changePasswordTitle" defaultMessage="Senha" />
     );
 
     if (canChangePassword) {
@@ -49,7 +50,8 @@ export class ChangePassword extends Component<ChangePasswordPropsInternal, {}> {
           <p>
             <FormattedMessage
               id="xpack.security.account.changePasswordDescription"
-              defaultMessage="Change the password for your account."
+              // defaultMessage="Change the password for your account."
+              defaultMessage="Altere a senha de sua conta."
             />
           </p>
         }
@@ -73,7 +75,8 @@ export class ChangePassword extends Component<ChangePasswordPropsInternal, {}> {
           <p>
             <FormattedMessage
               id="xpack.security.account.changePasswordNotSupportedText"
-              defaultMessage="You cannot change the password for this account."
+              // defaultMessage="You cannot change the password for this account."
+              defaultMessage="Você não pode alterar a senha desta conta."
             />
           </p>
         }

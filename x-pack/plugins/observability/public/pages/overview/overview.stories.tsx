@@ -107,27 +107,30 @@ const core = ({
           {
             from: 'now/d',
             to: 'now/d',
-            display: 'Today',
+            // display: 'Today',
+            display: 'Hoje',
           },
           {
             from: 'now/w',
             to: 'now/w',
-            display: 'This week',
+            // display: 'This week',
+            display: 'Esta semana',
           },
           {
             from: 'now-15m',
             to: 'now',
-            display: 'Last 15 minutes',
+            // display: 'Last 15 minutes',
+            display: 'Últimos 15 minutos',
           },
           {
             from: 'now-30m',
             to: 'now',
-            display: 'Last 30 minutes',
+            display: 'Últimos 30 minutos',
           },
           {
             from: 'now-1h',
             to: 'now',
-            display: 'Last 1 hour',
+            display: 'Última 1 hora',
           },
           {
             from: 'now-24h',
@@ -137,22 +140,22 @@ const core = ({
           {
             from: 'now-7d',
             to: 'now',
-            display: 'Last 7 days',
+            display: 'Últimos 7 dias',
           },
           {
             from: 'now-30d',
             to: 'now',
-            display: 'Last 30 days',
+            display: 'Últimos 30 dias',
           },
           {
             from: 'now-90d',
             to: 'now',
-            display: 'Last 90 days',
+            display: 'Últimos 90 dias',
           },
           {
             from: 'now-1y',
             to: 'now',
-            display: 'Last 1 year',
+            display: 'Último 1 ano',
           },
         ],
       };

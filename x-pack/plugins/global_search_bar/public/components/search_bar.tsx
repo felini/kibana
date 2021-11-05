@@ -404,10 +404,10 @@ export function SearchBar({
         compressed: true,
         className: 'kbnSearchBar',
         'aria-label': i18n.translate('xpack.globalSearchBar.searchBar.placeholder', {
-          defaultMessage: 'Search Elastic',
+          defaultMessage: 'Acesso rápido',
         }),
         placeholder: i18n.translate('xpack.globalSearchBar.searchBar.placeholder', {
-          defaultMessage: 'Search Elastic',
+          defaultMessage: 'Acesso rápido',
         }),
         onFocus: () => {
           trackUiMetric(METRIC_TYPE.COUNT, 'search_focus');
@@ -434,13 +434,13 @@ export function SearchBar({
               <p>
                 <FormattedMessage
                   id="xpack.globalSearchBar.searchBar.helpText.helpTextPrefix"
-                  defaultMessage="Filter by"
+                  defaultMessage="Filtro por"
                 />
                 &nbsp;
                 <EuiCode>type:</EuiCode>&nbsp;
                 <FormattedMessage
                   id="xpack.globalSearchBar.searchBar.helpText.helpTextConjunction"
-                  defaultMessage="or"
+                  defaultMessage="ou"
                 />
                 &nbsp;
                 <EuiCode>tag:</EuiCode>

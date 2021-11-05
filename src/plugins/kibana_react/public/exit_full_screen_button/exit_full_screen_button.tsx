@@ -60,7 +60,7 @@ class ExitFullScreenButtonUi extends PureComponent<ExitFullScreenButtonProps> {
           >
             <EuiFlexGroup component="span" responsive={false} alignItems="center" gutterSize="s">
               <EuiFlexItem grow={false}>
-                <EuiIcon type="logoElastic" size="l" />
+                {/* <EuiIcon type="logoElastic" size="l" /> */}
               </EuiFlexItem>
               <EuiFlexItem grow={false} data-test-subj="exitFullScreenModeText">
                 <div>
@@ -69,7 +69,8 @@ class ExitFullScreenButtonUi extends PureComponent<ExitFullScreenButtonProps> {
                       {i18n.translate(
                         'kibana-react.exitFullScreenButton.exitFullScreenModeButtonText',
                         {
-                          defaultMessage: 'Exit full screen',
+                          // defaultMessage: 'Exit full screen',
+                          defaultMessage: 'Sair da tela cheia',
                         }
                       )}
                     </p>

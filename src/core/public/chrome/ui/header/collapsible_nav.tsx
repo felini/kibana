@@ -172,7 +172,7 @@ export function CollapsibleNav({
             })}
             listItems={[
               {
-                label: 'Home',
+                label: 'Início',
                 iconType: 'home',
                 href: homeHref,
                 'data-test-subj': 'homeLink',
@@ -200,7 +200,8 @@ export function CollapsibleNav({
         <EuiCollapsibleNavGroup
           key="recentlyViewed"
           background="light"
-          title={i18n.translate('core.ui.recentlyViewed', { defaultMessage: 'Recently viewed' })}
+          // title={i18n.translate('core.ui.recentlyViewed', { defaultMessage: 'Recently viewed' })}
+          title={i18n.translate('core.ui.recentlyViewed', { defaultMessage: 'Visto recentemente' })}
           isCollapsible={true}
           initialIsOpen={getIsCategoryOpen('recentlyViewed', storage)}
           onToggle={(isCategoryOpen) =>

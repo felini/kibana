@@ -16,6 +16,7 @@ import { ChromeNavLink } from '../..';
 import { ElasticMark } from './elastic_mark';
 import { HttpStart } from '../../../http';
 import { LoadingIndicator } from '../loading_indicator';
+import logoDashboardPRO from './dashboardPRO_branco_no_preto.png';
 
 function findClosestAnchor(element: HTMLElement): HTMLAnchorElement | void {
   let current = element;
@@ -99,8 +100,9 @@ export function HeaderLogo({ href, navigateToApp, loadingCount$, ...observables 
         defaultMessage: 'Elastic home',
       })}
     >
-      <LoadingIndicator loadingCount$={loadingCount$!} />
-      <ElasticMark className="chrHeaderLogo__mark" aria-hidden={true} />
+      <img alt="" src={logoDashboardPRO} style={{ width: '180px' }} />
+      {/* <LoadingIndicator loadingCount$={loadingCount$!} /> */}
+      {/* <ElasticMark className="chrHeaderLogo__mark" aria-hidden={true} /> */}
     </a>
   );
 }

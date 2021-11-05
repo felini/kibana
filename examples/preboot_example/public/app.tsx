@@ -77,7 +77,8 @@ export const App = ({ http, token }: { http: HttpSetup; token?: string }) => {
         template="empty"
         pageHeader={{
           iconType: 'logoElastic',
-          pageTitle: 'Welcome to Elastic',
+          // pageTitle: 'Welcome to Elastic',
+          pageTitle: 'Bem vindo ao dashboardPRO',
         }}
       >
         <EuiPanel>
@@ -93,7 +94,8 @@ export const App = ({ http, token }: { http: HttpSetup; token?: string }) => {
       template="empty"
       pageHeader={{
         iconType: 'logoElastic',
-        pageTitle: 'Welcome to Elastic',
+        // pageTitle: 'Welcome to Elastic',
+        pageTitle: 'Bem vindo ao dashboardPRO',
       }}
     >
       <EuiPanel>

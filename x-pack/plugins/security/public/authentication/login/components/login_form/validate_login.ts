@@ -43,7 +43,8 @@ export class LoginValidator {
         i18n.translate(
           'xpack.security.authentication.login.validateLogin.requiredUsernameErrorMessage',
           {
-            defaultMessage: 'Username is required',
+            // defaultMessage: 'Username is required',
+            defaultMessage: 'Usuário é obrigatório.',
           }
         )
       );
@@ -64,7 +65,8 @@ export class LoginValidator {
         i18n.translate(
           'xpack.security.authentication.login.validateLogin.requiredPasswordErrorMessage',
           {
-            defaultMessage: 'Password is required',
+            // defaultMessage: 'Password is required.',
+            defaultMessage: 'Senha é obrigatória.',
           }
         )
       );

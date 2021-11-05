@@ -24,6 +24,7 @@ import {
 } from '../../../common/constants';
 import type { LoginState } from '../../../common/login_state';
 import { DisabledLoginForm, LoginForm, LoginFormMessageType } from './components';
+import logoHexasoft from './dashboardPRO_AzulEscuro_no_branco.png';
 
 interface Props {
   http: HttpStart;
@@ -42,7 +43,8 @@ const messageMap = new Map([
     {
       type: LoginFormMessageType.Info,
       content: i18n.translate('xpack.security.login.sessionExpiredDescription', {
-        defaultMessage: 'Your session has timed out. Please log in again.',
+        // defaultMessage: 'Your session has timed out. Please log in again.',
+        defaultMessage: 'Sua sessão expirou. Autentique-se novamente.',
       }),
     },
   ],
@@ -51,7 +53,8 @@ const messageMap = new Map([
     {
       type: LoginFormMessageType.Info,
       content: i18n.translate('xpack.security.login.loggedOutDescription', {
-        defaultMessage: 'You have logged out of Elastic.',
+        // defaultMessage: 'You have logged out of Elastic.',
+        defaultMessage: 'Você deslogou do dashboardPRO.',
       }),
     },
   ],
@@ -109,14 +112,18 @@ export class LoginPage extends Component<Props, State> {
         <header className="loginWelcome__header">
           <div className={contentHeaderClasses}>
             <EuiSpacer size="xxl" />
-            <span className="loginWelcome__logo">
-              <EuiIcon type="logoElastic" size="xxl" />
-            </span>
+            <img src={logoHexasoft} alt="LOGO" />
+            <EuiSpacer size="xxl" />
+            <EuiSpacer size="xxl" />
+            {/* <span className="loginWelcome__logo"> */}
+              {/* <EuiIcon type="logoElastic" size="xxl" /> */}
+            {/* </span> */}
             <EuiTitle size="m" className="loginWelcome__title">
               <h1>
                 <FormattedMessage
                   id="xpack.security.loginPage.welcomeTitle"
-                  defaultMessage="Welcome to Elastic"
+                  // defaultMessage="Welcome to Elastic"
+                  defaultMessage="Bem vindo!"
                 />
               </h1>
             </EuiTitle>

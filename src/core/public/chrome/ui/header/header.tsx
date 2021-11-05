@@ -41,7 +41,7 @@ import { OnIsLockedUpdate } from './';
 import { CollapsibleNav } from './collapsible_nav';
 import { HeaderBadge } from './header_badge';
 import { HeaderBreadcrumbs } from './header_breadcrumbs';
-import { HeaderHelpMenu } from './header_help_menu';
+// import { HeaderHelpMenu } from './header_help_menu';
 import { HeaderLogo } from './header_logo';
 import { HeaderNavControls } from './header_nav_controls';
 import { HeaderActionMenu } from './header_action_menu';
@@ -143,13 +143,13 @@ export function Header({
                   <EuiHideFor sizes={['m', 'l', 'xl']}>
                     <HeaderNavControls navControls$={observables.navControlsCenter$} />
                   </EuiHideFor>,
-                  <HeaderHelpMenu
-                    helpExtension$={observables.helpExtension$}
-                    helpSupportUrl$={observables.helpSupportUrl$}
-                    kibanaDocLink={kibanaDocLink}
-                    kibanaVersion={kibanaVersion}
-                    navigateToUrl={application.navigateToUrl}
-                  />,
+                  // <HeaderHelpMenu
+                  //   helpExtension$={observables.helpExtension$}
+                  //   helpSupportUrl$={observables.helpSupportUrl$}
+                  //   kibanaDocLink={kibanaDocLink}
+                  //   kibanaVersion={kibanaVersion}
+                  //   navigateToUrl={application.navigateToUrl}
+                  // />,
                   <HeaderNavControls navControls$={observables.navControlsRight$} />,
                 ],
                 borders: 'none',

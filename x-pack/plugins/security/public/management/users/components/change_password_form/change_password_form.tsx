@@ -74,7 +74,8 @@ export class ChangePasswordForm extends Component<Props, State> {
             label={
               <FormattedMessage
                 id="xpack.security.account.changePasswordForm.currentPasswordLabel"
-                defaultMessage="Current password"
+                // defaultMessage="Current password"
+                defaultMessage="Senha atual"
               />
             }
           >
@@ -94,7 +95,8 @@ export class ChangePasswordForm extends Component<Props, State> {
           helpText={
             <FormattedMessage
               id="xpack.security.account.changePasswordForm.passwordRequirements"
-              defaultMessage="Use at least 6 characters."
+              // defaultMessage="Use at least 6 characters."
+              defaultMessage="Use ao menos 6 caracteres."
             />
           }
           {...this.validateNewPassword()}
@@ -102,7 +104,8 @@ export class ChangePasswordForm extends Component<Props, State> {
           label={
             <FormattedMessage
               id="xpack.security.account.changePasswordForm.newPasswordLabel"
-              defaultMessage="New password"
+              // defaultMessage="New password"
+              defaultMessage="Nova senha"
             />
           }
         >
@@ -122,7 +125,8 @@ export class ChangePasswordForm extends Component<Props, State> {
           label={
             <FormattedMessage
               id="xpack.security.account.changePasswordForm.confirmPasswordLabel"
-              defaultMessage="Confirm new password"
+              // defaultMessage="Confirm new password"
+              defaultMessage="Confirme a nova senha"
             />
           }
         >
@@ -147,7 +151,8 @@ export class ChangePasswordForm extends Component<Props, State> {
               >
                 <FormattedMessage
                   id="xpack.security.account.changePasswordForm.saveChangesButtonLabel"
-                  defaultMessage="Change password"
+                  // defaultMessage="Change password"
+                  defaultMessage="Alterar senha"
                 />
               </EuiButton>
             </EuiFlexItem>
@@ -155,7 +160,8 @@ export class ChangePasswordForm extends Component<Props, State> {
               <EuiButtonEmpty onClick={this.onCancelClick} isDisabled={this.state.changeInProgress}>
                 <FormattedMessage
                   id="xpack.security.account.changePasswordForm.cancelButtonLabel"
-                  defaultMessage="Reset"
+                  // defaultMessage="Reset"
+                  defaultMessage="Reiniciar"
                 />
               </EuiButtonEmpty>
             </EuiFlexItem>
@@ -205,7 +211,8 @@ export class ChangePasswordForm extends Component<Props, State> {
         error: (
           <FormattedMessage
             id="xpack.security.account.changePasswordForm.invalidPassword"
-            defaultMessage="Current password is incorrect."
+            // defaultMessage="Current password is incorrect."
+            defaultMessage="Senha atual está incorreta."
           />
         ),
       };
@@ -217,7 +224,8 @@ export class ChangePasswordForm extends Component<Props, State> {
         error: (
           <FormattedMessage
             id="xpack.security.account.currentPasswordRequired"
-            defaultMessage="Current password is required."
+            // defaultMessage="Current password is required."
+            defaultMessage="Senha atual é requerida."
           />
         ),
       };
@@ -237,7 +245,8 @@ export class ChangePasswordForm extends Component<Props, State> {
         error: (
           <FormattedMessage
             id="xpack.security.account.passwordLengthDescription"
-            defaultMessage="Password is too short."
+            // defaultMessage="Password is too short."
+            defaultMessage="A senha é muito curta."
           />
         ),
       };
@@ -256,7 +265,8 @@ export class ChangePasswordForm extends Component<Props, State> {
         error: (
           <FormattedMessage
             id="xpack.security.account.passwordsDoNotMatch"
-            defaultMessage="Passwords do not match."
+            // defaultMessage="Passwords do not match."
+            defaultMessage="Senhas não combinam."
           />
         ),
       };
@@ -304,7 +314,8 @@ export class ChangePasswordForm extends Component<Props, State> {
   private handleChangePasswordSuccess = () => {
     this.props.notifications.toasts.addSuccess({
       title: i18n.translate('xpack.security.account.changePasswordSuccess', {
-        defaultMessage: 'Your password has been changed.',
+        // defaultMessage: 'Your password has been changed.',
+        defaultMessage: 'Sua senha foi alterada com sucesso.',
       }),
       'data-test-subj': 'passwordUpdateSuccess',
     });

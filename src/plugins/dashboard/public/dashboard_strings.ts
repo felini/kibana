@@ -58,7 +58,8 @@ export const dashboardFeatureCatalog = {
     }),
   getSubtitle: () =>
     i18n.translate('dashboard.featureCatalogue.dashboardSubtitle', {
-      defaultMessage: 'Analyze data in dashboards.',
+      // defaultMessage: 'Analyze data in dashboards.',
+      defaultMessage: 'Análise suas informações.',
     }),
   getDescription: () =>
     i18n.translate('dashboard.featureCatalogue.dashboardDescription', {

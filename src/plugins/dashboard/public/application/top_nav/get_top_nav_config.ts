@@ -86,10 +86,12 @@ function getFullScreenConfig(action: NavAction) {
   return {
     id: 'full-screen',
     label: i18n.translate('dashboard.topNave.fullScreenButtonAriaLabel', {
-      defaultMessage: 'full screen',
+      // defaultMessage: 'full screen',
+      defaultMessage: 'Tela Cheia',
     }),
     description: i18n.translate('dashboard.topNave.fullScreenConfigDescription', {
-      defaultMessage: 'Full Screen Mode',
+      // defaultMessage: 'Full Screen Mode',
+      defaultMessage: 'Modo tela cheia',
     }),
     testId: 'dashboardFullScreenMode',
     run: action,
@@ -211,10 +213,12 @@ function getShareConfig(action: NavAction | undefined, disableButton?: boolean) 
   return {
     id: 'share',
     label: i18n.translate('dashboard.topNave.shareButtonAriaLabel', {
-      defaultMessage: 'share',
+      // defaultMessage: 'share',
+      defaultMessage: 'Compartilhar',
     }),
     description: i18n.translate('dashboard.topNave.shareConfigDescription', {
-      defaultMessage: 'Share Dashboard',
+      // defaultMessage: 'Share Dashboard',
+      defaultMessage: 'Compartilhar Dashboard',
     }),
     testId: 'shareTopNavButton',
     run: action ?? (() => {}),

@@ -20,31 +20,35 @@ export const TimeDropdown = (props: Props) => (
     options={[
       {
         text: i18n.translate('xpack.infra.nodeDetails.metrics.last15Minutes', {
-          defaultMessage: 'Last 15 minutes',
+          // defaultMessage: 'Last 15 minutes',
+          defaultMessage: 'Últimos 15 minutos',
         }),
         value: 15 * 60 * 1000,
       },
       {
         text: i18n.translate('xpack.infra.nodeDetails.metrics.lastHour', {
-          defaultMessage: 'Last hour',
+          // defaultMessage: 'Last hour',
+          defaultMessage: 'Última hora',
         }),
         value: 60 * 60 * 1000,
       },
       {
         text: i18n.translate('xpack.infra.nodeDetails.metrics.last3Hours', {
-          defaultMessage: 'Last 3 hours',
+          // defaultMessage: 'Last 3 hours',
+          defaultMessage: 'Últimas 3 horas',
         }),
         value: 3 * 60 * 60 * 1000,
       },
       {
         text: i18n.translate('xpack.infra.nodeDetails.metrics.last24Hours', {
-          defaultMessage: 'Last 24 hours',
+          // defaultMessage: 'Last 24 hours',
+          defaultMessage: 'Últimas 24 horas',
         }),
         value: 24 * 60 * 60 * 1000,
       },
       {
         text: i18n.translate('xpack.infra.nodeDetails.metrics.last7Days', {
-          defaultMessage: 'Last 7 days',
+          defaultMessage: 'Últimos 7 dias',
         }),
         value: 7 * 24 * 60 * 60 * 1000,
       },

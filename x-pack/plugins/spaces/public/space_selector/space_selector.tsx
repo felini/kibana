@@ -6,7 +6,8 @@
  */
 
 import './space_selector.scss';
-
+import logoHexasoft from '../../../../assets_dashboardpro/dashboardpro_azulnobranco.png';
+// x-pack/assets_dashboardpro/dashboardpro_azulnobranco.png
 import {
   EuiFieldSearch,
   EuiFlexGroup,
@@ -109,15 +110,19 @@ export class SpaceSelector extends Component<Props, State> {
         <EuiPageBody>
           <EuiPageHeader className="spcSpaceSelector__heading">
             <EuiSpacer size="xxl" />
-            <span className="spcSpaceSelector__logo">
-              <EuiIcon size="xxl" type={`logoElastic`} />
-            </span>
+            {/* <span className="spcSpaceSelector__logo"> */}
+              {/* <EuiIcon size="xxl" type={`logoElastic`} /> */}
+            {/* </span> */}
 
+            <img src={logoHexasoft} alt="LOGO" />
+            
+            <EuiSpacer size="xxl" />
             <EuiTitle size="l">
               <h1 tabIndex={0} ref={this.setHeaderRef}>
                 <FormattedMessage
                   id="xpack.spaces.spaceSelector.selectSpacesTitle"
-                  defaultMessage="Select your space"
+                  // defaultMessage="Select your space"
+                  defaultMessage="Selecione seu cliente"
                 />
               </h1>
             </EuiTitle>
@@ -125,7 +130,8 @@ export class SpaceSelector extends Component<Props, State> {
               <p>
                 <FormattedMessage
                   id="xpack.spaces.spaceSelector.changeSpaceAnytimeAvailabilityText"
-                  defaultMessage="You can change your space at anytime"
+                  // defaultMessage="You can change your space at anytime"
+                  defaultMessage="Você poderá alternar entre os clientes posteriormente."
                 />
               </p>
             </EuiText>
