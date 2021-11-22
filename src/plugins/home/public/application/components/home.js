@@ -118,21 +118,21 @@ export class Home extends Component {
         data-test-subj="homeApp"
         pageHeader={{
           bottomBorder: false,
-          pageTitle: <FormattedMessage id="home.header.title" defaultMessage="Welcome home" />,
+          pageTitle: <FormattedMessage id="home.header.title" defaultMessage="Início" />,
         }}
         template="empty"
       >
-        <SolutionsSection addBasePath={addBasePath} solutions={solutions} />
+        {/* <SolutionsSection addBasePath={addBasePath} solutions={solutions} /> */}
 
-        <AddData addBasePath={addBasePath} application={application} isDarkMode={isDarkMode} />
+        {/* <AddData addBasePath={addBasePath} application={application} isDarkMode={isDarkMode} /> */}
 
-        <ManageData
+        {/* <ManageData
           addBasePath={addBasePath}
           application={application}
           features={manageDataFeatures}
-        />
+        /> */}
 
-        <OverviewPageFooter
+        {/* <OverviewPageFooter
           addBasePath={addBasePath}
           path={HOME_APP_BASE_PATH}
           onSetDefaultRoute={() => {
@@ -141,7 +141,7 @@ export class Home extends Component {
           onChangeDefaultRoute={() => {
             trackUiMetric(METRIC_TYPE.CLICK, 'change_to_different_default_route');
           }}
-        />
+        /> */}
       </KibanaPageTemplate>
     );
   }

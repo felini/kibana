@@ -160,7 +160,7 @@ export function CollapsibleNav({
       )}
 
       {/* Pinned items */}
-      <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
+      {/* <EuiFlexItem grow={false} style={{ flexShrink: 0 }}>
         <EuiCollapsibleNavGroup
           background="light"
           className="eui-yScroll"
@@ -193,7 +193,7 @@ export function CollapsibleNav({
             size="s"
           />
         </EuiCollapsibleNavGroup>
-      </EuiFlexItem>
+      </EuiFlexItem> */}
 
       {/* Recently viewed */}
       {recentlyAccessed.length > 0 && (

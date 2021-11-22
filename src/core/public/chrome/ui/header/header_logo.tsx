@@ -90,6 +90,8 @@ export function HeaderLogo({ href, navigateToApp, loadingCount$, ...observables 
   const forceNavigation = useObservable(observables.forceNavigation$, false);
   const navLinks = useObservable(observables.navLinks$, []);
 
+  return (<img alt="" src={logoDashboardPRO} style={{ width: '180px' }} />);
+  
   return (
     <a
       onClick={(e) => onClick(e, forceNavigation, navLinks, navigateToApp)}
