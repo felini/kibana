@@ -97,7 +97,8 @@ export class CustomizeTimeRangeModal extends Component<CustomizeTimeRangeProps, 
         <EuiModalHeader>
           <EuiModalHeaderTitle data-test-subj="customizePanelTitle">
             {i18n.translate('xpack.uiActionsEnhanced.customizeTimeRange.modal.headerTitle', {
-              defaultMessage: 'Customize panel time range',
+              // defaultMessage: 'Customize panel time range',
+              defaultMessage: 'Customizar período de tempo',
             })}
           </EuiModalHeaderTitle>
         </EuiModalHeader>
@@ -107,7 +108,8 @@ export class CustomizeTimeRangeModal extends Component<CustomizeTimeRangeProps, 
             label={i18n.translate(
               'xpack.uiActionsEnhanced.customizePanelTimeRange.modal.optionsMenuForm.panelTitleFormRowLabel',
               {
-                defaultMessage: 'Time range',
+                // defaultMessage: 'Time range',
+                defaultMessage: 'Período de Tempo',
               }
             )}
           >
@@ -145,7 +147,8 @@ export class CustomizeTimeRangeModal extends Component<CustomizeTimeRangeProps, 
                   {i18n.translate(
                     'xpack.uiActionsEnhanced.customizePanelTimeRange.modal.removeButtonTitle',
                     {
-                      defaultMessage: 'Remove',
+                      // defaultMessage: 'Remove',
+                      defaultMessage: 'Remover',
                     }
                   )}
                 </EuiButtonEmpty>
@@ -156,7 +159,8 @@ export class CustomizeTimeRangeModal extends Component<CustomizeTimeRangeProps, 
                 {i18n.translate(
                   'xpack.uiActionsEnhanced.customizePanelTimeRange.modal.cancelButtonTitle',
                   {
-                    defaultMessage: 'Cancel',
+                    // defaultMessage: 'Cancel',
+                    defaultMessage: 'Cancelar',
                   }
                 )}
               </EuiButtonEmpty>
@@ -167,13 +171,15 @@ export class CustomizeTimeRangeModal extends Component<CustomizeTimeRangeProps, 
                   ? i18n.translate(
                       'xpack.uiActionsEnhanced.customizePanelTimeRange.modal.addToPanelButtonTitle',
                       {
-                        defaultMessage: 'Add to panel',
+                        // defaultMessage: 'Add to panel',
+                        defaultMessage: 'Adicionar',
                       }
                     )
                   : i18n.translate(
                       'xpack.uiActionsEnhanced.customizePanelTimeRange.modal.updatePanelTimeRangeButtonTitle',
                       {
-                        defaultMessage: 'Update',
+                        // defaultMessage: 'Update',
+                        defaultMessage: 'Atualizar',
                       }
                     )}
               </EuiButton>
