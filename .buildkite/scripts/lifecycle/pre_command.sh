@@ -9,8 +9,22 @@ export BUILDKITE_TOKEN
 
 echo '--- Install buildkite dependencies'
 cd '.buildkite'
-retry 5 15 yarn install
-cd -
+
+# If this yarn install is terminated early, e.g. if the build is cancelled in buildkite,
+# A node module could end up in a bad state that can cause all future builds to fail
+# So, let's cache clean and try again to make sure that's not what caused the error
+install_deps() {
+  yarn install --production --pure-lockfile
+  EXIT=$?
+  if [[ "$EXIT" != "0" ]]; then
+    yarn cache clean
+  fi
+  return $EXIT
+}
+
+retry 5 15 install_deps
+
+cd ..
 
 node .buildkite/scripts/lifecycle/print_agent_links.js || true
 
@@ -90,7 +104,6 @@ if [[ "${SKIP_CI_SETUP:-}" != "true" ]]; then
   if [[ -d .buildkite/scripts && "${BUILDKITE_COMMAND:-}" != "buildkite-agent pipeline upload"* ]]; then
     source .buildkite/scripts/common/env.sh
     source .buildkite/scripts/common/setup_node.sh
-    source .buildkite/scripts/common/setup_bazel.sh
   fi
 fi
 
